@@ -3,25 +3,37 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5D730C20C313BF625131C22E /* Pods_AnimationExperiment.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8328A92E4F8D1D9300E307EA /* Pods_AnimationExperiment.framework */; };
+		9819F487233D54A2004F0F10 /* SpringViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9819F486233D54A2004F0F10 /* SpringViewController.swift */; };
 		982C93C7232532FF00397242 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 982C93C6232532FF00397242 /* AppDelegate.swift */; };
-		982C93C9232532FF00397242 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 982C93C8232532FF00397242 /* ViewController.swift */; };
 		982C93CC232532FF00397242 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 982C93CA232532FF00397242 /* Main.storyboard */; };
 		982C93CE2325330000397242 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 982C93CD2325330000397242 /* Assets.xcassets */; };
 		982C93D12325330000397242 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 982C93CF2325330000397242 /* LaunchScreen.storyboard */; };
+		98405D76233C028B00E06525 /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98405D75233C028B00E06525 /* TableViewCell.swift */; };
+		98405D78233C074200E06525 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98405D77233C074200E06525 /* ViewController.swift */; };
+		98405D7A233C0EC300E06525 /* Inspectable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98405D79233C0EC300E06525 /* Inspectable.swift */; };
+		98D60253233EA477001FA3B8 /* OptionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98D60252233EA477001FA3B8 /* OptionsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3A6C43D49F5111C1147A8669 /* Pods-AnimationExperiment.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AnimationExperiment.debug.xcconfig"; path = "Target Support Files/Pods-AnimationExperiment/Pods-AnimationExperiment.debug.xcconfig"; sourceTree = "<group>"; };
+		8328A92E4F8D1D9300E307EA /* Pods_AnimationExperiment.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AnimationExperiment.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9819F486233D54A2004F0F10 /* SpringViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpringViewController.swift; sourceTree = "<group>"; };
 		982C93C3232532FF00397242 /* AnimationExperiment.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AnimationExperiment.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		982C93C6232532FF00397242 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		982C93C8232532FF00397242 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		982C93CB232532FF00397242 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		982C93CD2325330000397242 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		982C93D02325330000397242 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		982C93D22325330000397242 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		98405D75233C028B00E06525 /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
+		98405D77233C074200E06525 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		98405D79233C0EC300E06525 /* Inspectable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Inspectable.swift; sourceTree = "<group>"; };
+		98D60252233EA477001FA3B8 /* OptionsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OptionsViewController.swift; sourceTree = "<group>"; };
+		B33A5286940222EFE5DCD123 /* Pods-AnimationExperiment.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AnimationExperiment.release.xcconfig"; path = "Target Support Files/Pods-AnimationExperiment/Pods-AnimationExperiment.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +41,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5D730C20C313BF625131C22E /* Pods_AnimationExperiment.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		93D3DA92E4E76879CEDD81EC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8328A92E4F8D1D9300E307EA /* Pods_AnimationExperiment.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		982C93BA232532FF00397242 = {
 			isa = PBXGroup;
 			children = (
 				982C93C5232532FF00397242 /* AnimationExperiment */,
 				982C93C4232532FF00397242 /* Products */,
+				9E9ADF6359D95826524EE5A7 /* Pods */,
+				93D3DA92E4E76879CEDD81EC /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,14 +77,59 @@
 		982C93C5232532FF00397242 /* AnimationExperiment */ = {
 			isa = PBXGroup;
 			children = (
-				982C93C6232532FF00397242 /* AppDelegate.swift */,
-				982C93C8232532FF00397242 /* ViewController.swift */,
-				982C93CA232532FF00397242 /* Main.storyboard */,
-				982C93CD2325330000397242 /* Assets.xcassets */,
-				982C93CF2325330000397242 /* LaunchScreen.storyboard */,
 				982C93D22325330000397242 /* Info.plist */,
+				98D60250233EA424001FA3B8 /* view */,
+				98D6024F233EA40B001FA3B8 /* utils */,
+				98D6024E233EA3FE001FA3B8 /* animations */,
+				982C93C6232532FF00397242 /* AppDelegate.swift */,
+				98405D77233C074200E06525 /* ViewController.swift */,
 			);
 			path = AnimationExperiment;
+			sourceTree = "<group>";
+		};
+		98D6024E233EA3FE001FA3B8 /* animations */ = {
+			isa = PBXGroup;
+			children = (
+				98D60251233EA440001FA3B8 /* spring */,
+			);
+			path = animations;
+			sourceTree = "<group>";
+		};
+		98D6024F233EA40B001FA3B8 /* utils */ = {
+			isa = PBXGroup;
+			children = (
+				98405D75233C028B00E06525 /* TableViewCell.swift */,
+				982C93CD2325330000397242 /* Assets.xcassets */,
+				98405D79233C0EC300E06525 /* Inspectable.swift */,
+			);
+			path = utils;
+			sourceTree = "<group>";
+		};
+		98D60250233EA424001FA3B8 /* view */ = {
+			isa = PBXGroup;
+			children = (
+				982C93CA232532FF00397242 /* Main.storyboard */,
+				982C93CF2325330000397242 /* LaunchScreen.storyboard */,
+			);
+			path = view;
+			sourceTree = "<group>";
+		};
+		98D60251233EA440001FA3B8 /* spring */ = {
+			isa = PBXGroup;
+			children = (
+				98D60252233EA477001FA3B8 /* OptionsViewController.swift */,
+				9819F486233D54A2004F0F10 /* SpringViewController.swift */,
+			);
+			path = spring;
+			sourceTree = "<group>";
+		};
+		9E9ADF6359D95826524EE5A7 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				3A6C43D49F5111C1147A8669 /* Pods-AnimationExperiment.debug.xcconfig */,
+				B33A5286940222EFE5DCD123 /* Pods-AnimationExperiment.release.xcconfig */,
+			);
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +139,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 982C93D52325330000397242 /* Build configuration list for PBXNativeTarget "AnimationExperiment" */;
 			buildPhases = (
+				A86518DD0EC38A18911362DF /* [CP] Check Pods Manifest.lock */,
 				982C93BF232532FF00397242 /* Sources */,
 				982C93C0232532FF00397242 /* Frameworks */,
 				982C93C1232532FF00397242 /* Resources */,
+				E15EF3D75684791F2B76C25A /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -130,12 +200,58 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		A86518DD0EC38A18911362DF /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-AnimationExperiment-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E15EF3D75684791F2B76C25A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-AnimationExperiment/Pods-AnimationExperiment-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-AnimationExperiment/Pods-AnimationExperiment-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-AnimationExperiment/Pods-AnimationExperiment-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		982C93BF232532FF00397242 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				982C93C9232532FF00397242 /* ViewController.swift in Sources */,
+				98405D78233C074200E06525 /* ViewController.swift in Sources */,
+				98405D76233C028B00E06525 /* TableViewCell.swift in Sources */,
+				98405D7A233C0EC300E06525 /* Inspectable.swift in Sources */,
+				98D60253233EA477001FA3B8 /* OptionsViewController.swift in Sources */,
+				9819F487233D54A2004F0F10 /* SpringViewController.swift in Sources */,
 				982C93C7232532FF00397242 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -280,6 +396,7 @@
 		};
 		982C93D62325330000397242 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3A6C43D49F5111C1147A8669 /* Pods-AnimationExperiment.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -298,6 +415,7 @@
 		};
 		982C93D72325330000397242 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B33A5286940222EFE5DCD123 /* Pods-AnimationExperiment.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
