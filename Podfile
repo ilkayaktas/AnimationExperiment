@@ -6,8 +6,14 @@ target 'AnimationExperiment' do
   use_frameworks!
 
   pod 'Spring', :git => 'https://github.com/MengTo/Spring.git'
+  pod 'Hero'
+  pod 'SPStorkController' # Modal view controller coming from ground!
+  pod 'SPFakeBar' # Used in SPStorkController
+  pod 'SPAlert' # Used in SPStorkController
+  # pod 'ElasticTransition'
+  # pod 'Gemini'
+  # pod 'TweenKit'
   # pod 'lottie-ios'
-  # pod 'Hero'
   # pod 'NotificationBannerSwift'
   # pod 'SkeletonView'
   # pod 'FaveButton'
@@ -22,8 +28,6 @@ target 'AnimationExperiment' do
   # pod 'pop'
   # pod 'NumberMorphView'
   # pod 'SwiftMessages'
-  # pod 'ElasticTransition'
-  # pod 'Gemini'
   # pod 'KYGooeyMenu'
   # pod 'IBAnimatable'
   # # Advance library
@@ -34,7 +38,6 @@ target 'AnimationExperiment' do
   # pod 'MotionMachine'
   # pod 'Ubergang'
   # pod 'MotionBlur'
-  # pod 'TweenKit'
   # pod 'Pastel'
   # # YapAnimator
   # pod 'AnimatedCollectionViewLayout'
@@ -46,7 +49,6 @@ target 'AnimationExperiment' do
   # pod 'TransitionTreasury'
   # pod 'Motion'
   # pod 'ImageTransition'
-  # pod 'SPStorkController'
   # pod 'SPPermission/Notification'
 
 end

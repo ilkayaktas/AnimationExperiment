@@ -14,7 +14,7 @@ class ViewController: UIViewController {
     
     let animationList = [
         "Spring",
-        "Lottie",
+        "SPStorkController",
         "Hero"
     ]
     
@@ -26,18 +26,6 @@ class ViewController: UIViewController {
         animationTableView.dataSource = self
         
     }
-
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if segue.identifier == "SpringSegue"{
-//            let destinationViewController = segue.destination as! SpringViewController
-
-        }
-        
-    }
-    
 
 }
 

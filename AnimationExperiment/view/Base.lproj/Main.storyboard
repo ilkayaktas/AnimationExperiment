@@ -23,7 +23,7 @@
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" separatorInsetReference="fromAutomaticInsets" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="85C-ZO-fHg">
                                 <rect key="frame" x="0.0" y="88" width="414" height="808"/>
-                                <color key="separatorColor" systemColor="linkColor" red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="separatorColor" systemColor="linkColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <inset key="separatorInset" minX="15" minY="0.0" maxX="15" maxY="0.0"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="TableViewCell" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationLevel="1" indentationWidth="10" reuseIdentifier="TableViewCell" rowHeight="77" id="ght-Fm-K7I" customClass="TableViewCell" customModule="AnimationExperiment" customModuleProvider="target">
@@ -59,7 +59,7 @@
                                                             </subviews>
                                                         </stackView>
                                                     </subviews>
-                                                    <color key="backgroundColor" systemColor="systemGreenColor" red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <color key="backgroundColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <constraints>
                                                         <constraint firstItem="L8I-Eg-JzZ" firstAttribute="centerX" secondItem="Ley-uC-uce" secondAttribute="centerX" id="4l7-D9-jIN"/>
                                                         <constraint firstAttribute="height" constant="69" id="NLd-2q-xXL"/>
@@ -76,7 +76,7 @@
                                                             <size key="value" width="0.0" height="0.0"/>
                                                         </userDefinedRuntimeAttribute>
                                                         <userDefinedRuntimeAttribute type="color" keyPath="shadowColor">
-                                                            <color key="value" systemColor="systemBlueColor" red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                            <color key="value" systemColor="systemBlueColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         </userDefinedRuntimeAttribute>
                                                     </userDefinedRuntimeAttributes>
                                                 </view>
@@ -120,6 +120,8 @@
                     <connections>
                         <outlet property="animationTableView" destination="85C-ZO-fHg" id="eyB-ZF-lyq"/>
                         <segue destination="Asx-a2-reb" kind="show" identifier="SpringSegue" id="h2k-dc-80A"/>
+                        <segue destination="e85-l5-NUy" kind="show" identifier="HeroSegue" id="ej7-bN-OgX"/>
+                        <segue destination="iKF-Ej-d6Y" kind="show" identifier="SPStorkControllerSegue" id="8L5-Qj-gnp"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="b3V-Is-pbF" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -154,7 +156,7 @@
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="isP-GY-0OX" customClass="SpringView" customModule="Spring">
                                 <rect key="frame" x="157" y="128" width="100" height="100"/>
-                                <color key="backgroundColor" systemColor="systemOrangeColor" red="1" green="0.58431372549019611" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" systemColor="systemOrangeColor" red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="100" id="J7f-CC-uLx"/>
                                     <constraint firstAttribute="height" constant="100" id="flK-Ea-xOg"/>
@@ -170,7 +172,7 @@
                                             <constraint firstAttribute="height" constant="30" id="tVf-bY-GWh"/>
                                         </constraints>
                                         <color key="minimumTrackTintColor" red="0.15340511500000001" green="0.61420810219999999" blue="0.92509436609999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        <color key="maximumTrackTintColor" systemColor="opaqueSeparatorColor" red="0.77647058823529413" green="0.77647058823529413" blue="0.78431372549019607" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="maximumTrackTintColor" systemColor="opaqueSeparatorColor" red="0.77647058820000003" green="0.77647058820000003" blue="0.7843137255" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <connections>
                                             <action selector="forceSliderChanged:" destination="Asx-a2-reb" eventType="valueChanged" id="qQe-mG-l9O"/>
                                         </connections>
@@ -188,7 +190,7 @@
                                             <constraint firstAttribute="width" constant="86" id="BEP-T3-EAw"/>
                                         </constraints>
                                         <color key="minimumTrackTintColor" red="0.15340511500000001" green="0.61420810219999999" blue="0.92509436609999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        <color key="maximumTrackTintColor" systemColor="opaqueSeparatorColor" red="0.77647058823529413" green="0.77647058823529413" blue="0.78431372549019607" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="maximumTrackTintColor" systemColor="opaqueSeparatorColor" red="0.77647058820000003" green="0.77647058820000003" blue="0.7843137255" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <connections>
                                             <action selector="durationSliderChanged:" destination="Asx-a2-reb" eventType="valueChanged" id="kx1-4Q-ShQ"/>
                                         </connections>
@@ -206,7 +208,7 @@
                                             <constraint firstAttribute="height" constant="30" id="nNy-VX-dil"/>
                                         </constraints>
                                         <color key="minimumTrackTintColor" red="0.15340511500000001" green="0.61420810219999999" blue="0.92509436609999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        <color key="maximumTrackTintColor" systemColor="opaqueSeparatorColor" red="0.77647058823529413" green="0.77647058823529413" blue="0.78431372549019607" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="maximumTrackTintColor" systemColor="opaqueSeparatorColor" red="0.77647058820000003" green="0.77647058820000003" blue="0.7843137255" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <connections>
                                             <action selector="delaySliderChanged:" destination="Asx-a2-reb" eventType="valueChanged" id="RNG-Zh-hZF"/>
                                         </connections>
@@ -224,7 +226,7 @@
                                             <constraint firstAttribute="height" constant="30" id="tPo-Fz-XpM"/>
                                         </constraints>
                                         <color key="minimumTrackTintColor" red="0.15340511500000001" green="0.61420810219999999" blue="0.92509436609999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        <color key="maximumTrackTintColor" systemColor="opaqueSeparatorColor" red="0.77647058823529413" green="0.77647058823529413" blue="0.78431372549019607" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="maximumTrackTintColor" systemColor="opaqueSeparatorColor" red="0.77647058820000003" green="0.77647058820000003" blue="0.7843137255" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <connections>
                                             <action selector="dampingSliderChanged:" destination="Asx-a2-reb" eventType="valueChanged" id="nfP-4L-d6p"/>
                                         </connections>
@@ -242,7 +244,7 @@
                                             <constraint firstAttribute="width" constant="86" id="Vd4-3W-pJ6"/>
                                         </constraints>
                                         <color key="minimumTrackTintColor" red="0.15340511500000001" green="0.61420810219999999" blue="0.92509436609999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        <color key="maximumTrackTintColor" systemColor="opaqueSeparatorColor" red="0.77647058823529413" green="0.77647058823529413" blue="0.78431372549019607" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="maximumTrackTintColor" systemColor="opaqueSeparatorColor" red="0.77647058820000003" green="0.77647058820000003" blue="0.7843137255" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <connections>
                                             <action selector="velocitySliderChanged:" destination="Asx-a2-reb" eventType="valueChanged" id="1OZ-EY-AWB"/>
                                         </connections>
@@ -260,7 +262,7 @@
                                             <constraint firstAttribute="height" constant="30" id="mkL-xb-pJn"/>
                                         </constraints>
                                         <color key="minimumTrackTintColor" red="0.15340511500000001" green="0.61420810219999999" blue="0.92509436609999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        <color key="maximumTrackTintColor" systemColor="opaqueSeparatorColor" red="0.77647058823529413" green="0.77647058823529413" blue="0.78431372549019607" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="maximumTrackTintColor" systemColor="opaqueSeparatorColor" red="0.77647058820000003" green="0.77647058820000003" blue="0.7843137255" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <connections>
                                             <action selector="rotateSliderChanged:" destination="Asx-a2-reb" eventType="valueChanged" id="Frr-JG-pl0"/>
                                         </connections>
@@ -278,7 +280,7 @@
                                             <constraint firstAttribute="height" constant="30" id="QKb-z1-qGr"/>
                                         </constraints>
                                         <color key="minimumTrackTintColor" red="0.15340511500000001" green="0.61420810219999999" blue="0.92509436609999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        <color key="maximumTrackTintColor" systemColor="opaqueSeparatorColor" red="0.77647058823529413" green="0.77647058823529413" blue="0.78431372549019607" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="maximumTrackTintColor" systemColor="opaqueSeparatorColor" red="0.77647058820000003" green="0.77647058820000003" blue="0.7843137255" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <connections>
                                             <action selector="xSliderChanged:" destination="Asx-a2-reb" eventType="valueChanged" id="EY1-MP-13T"/>
                                         </connections>
@@ -296,7 +298,7 @@
                                             <constraint firstAttribute="width" constant="86" id="j8A-iz-avW"/>
                                         </constraints>
                                         <color key="minimumTrackTintColor" red="0.15340511500000001" green="0.61420810219999999" blue="0.92509436609999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        <color key="maximumTrackTintColor" systemColor="opaqueSeparatorColor" red="0.77647058823529413" green="0.77647058823529413" blue="0.78431372549019607" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="maximumTrackTintColor" systemColor="opaqueSeparatorColor" red="0.77647058820000003" green="0.77647058820000003" blue="0.7843137255" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <connections>
                                             <action selector="ySliderChanged:" destination="Asx-a2-reb" eventType="valueChanged" id="g3Y-La-Ydd"/>
                                         </connections>
@@ -314,7 +316,7 @@
                                             <constraint firstAttribute="height" constant="30" id="Otg-FK-DXN"/>
                                         </constraints>
                                         <color key="minimumTrackTintColor" red="0.15340511500000001" green="0.61420810219999999" blue="0.92509436609999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        <color key="maximumTrackTintColor" systemColor="opaqueSeparatorColor" red="0.77647058823529413" green="0.77647058823529413" blue="0.78431372549019607" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="maximumTrackTintColor" systemColor="opaqueSeparatorColor" red="0.77647058820000003" green="0.77647058820000003" blue="0.7843137255" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <connections>
                                             <action selector="scaleSliderChanged:" destination="Asx-a2-reb" eventType="valueChanged" id="YW2-UU-K5z"/>
                                         </connections>
@@ -647,6 +649,96 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="NLX-FG-P15" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1276.8115942028987" y="-423.21428571428572"/>
+        </scene>
+        <!--SPStorkController Library-->
+        <scene sceneID="8Cg-3x-nfJ">
+            <objects>
+                <viewController id="iKF-Ej-d6Y" customClass="SPStorkViewController" customModule="AnimationExperiment" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="sdd-W7-w6Y">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="29" translatesAutoresizingMaskIntoConstraints="NO" id="nIf-eJ-3nT">
+                                <rect key="frame" x="86" y="374" width="242" height="148"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mAj-hO-tUa">
+                                        <rect key="frame" x="49.5" y="0.0" width="143" height="30"/>
+                                        <state key="normal" title="Show ViewController"/>
+                                        <connections>
+                                            <action selector="showViewController:" destination="iKF-Ej-d6Y" eventType="touchUpInside" id="AZB-2M-9vs"/>
+                                            <action selector="showViewController:" destination="H51-SC-xIi" eventType="touchUpInside" id="X5X-G8-lWX"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EAn-oC-iFg">
+                                        <rect key="frame" x="0.0" y="59" width="242" height="30"/>
+                                        <state key="normal" title="Show Custom Sized ViewController"/>
+                                        <connections>
+                                            <action selector="showCustomSizedViewController:" destination="H51-SC-xIi" eventType="touchUpInside" id="OII-55-jeV"/>
+                                            <action selector="showCustomSizedViewController:" destination="iKF-Ej-d6Y" eventType="touchUpInside" id="P9L-W1-JRk"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DLE-zG-BSS">
+                                        <rect key="frame" x="2.5" y="118" width="237" height="30"/>
+                                        <state key="normal" title="Show ViewController With Confirm"/>
+                                        <connections>
+                                            <action selector="showWithConfirm:" destination="iKF-Ej-d6Y" eventType="touchUpInside" id="boq-KR-QRj"/>
+                                            <action selector="showWithConfirm:" destination="H51-SC-xIi" eventType="touchUpInside" id="kEy-Fu-ulG"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SPStorkController, SPAlert and SPFakeBar libraries are used." textAlignment="center" lineBreakMode="wordWrap" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NtA-vD-jtb">
+                                <rect key="frame" x="20" y="108" width="374" height="44.5"/>
+                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="nIf-eJ-3nT" firstAttribute="centerY" secondItem="sdd-W7-w6Y" secondAttribute="centerY" id="C6M-Yi-llw"/>
+                            <constraint firstItem="NtA-vD-jtb" firstAttribute="leading" secondItem="1W3-40-msK" secondAttribute="leading" constant="20" id="CyV-Tx-g6Z"/>
+                            <constraint firstItem="nIf-eJ-3nT" firstAttribute="centerX" secondItem="sdd-W7-w6Y" secondAttribute="centerX" id="IAa-rR-Ni1"/>
+                            <constraint firstItem="NtA-vD-jtb" firstAttribute="top" secondItem="1W3-40-msK" secondAttribute="top" constant="20" id="egS-VP-qbc"/>
+                            <constraint firstItem="1W3-40-msK" firstAttribute="trailing" secondItem="NtA-vD-jtb" secondAttribute="trailing" constant="20" id="wNn-D3-ywI"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="1W3-40-msK"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="SPStorkController Library" id="nic-pa-2Gr"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="aT9-2L-UX4" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="H51-SC-xIi" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="2153.6231884057975" y="-423.21428571428572"/>
+        </scene>
+        <!--Hero Library-->
+        <scene sceneID="gnt-8z-ES7">
+            <objects>
+                <viewController id="e85-l5-NUy" customClass="HeroViewController" customModule="AnimationExperiment" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="G2l-pw-uzw">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sxo-O2-1sR">
+                                <rect key="frame" x="143.5" y="154" width="127" height="30"/>
+                                <state key="normal" title="Show First Sample"/>
+                                <connections>
+                                    <action selector="showFirstSample:" destination="e85-l5-NUy" eventType="touchUpInside" id="keI-dh-nA6"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="sxo-O2-1sR" firstAttribute="top" secondItem="M7o-NB-P25" secondAttribute="top" constant="66" id="X9z-D9-UcL"/>
+                            <constraint firstItem="sxo-O2-1sR" firstAttribute="centerX" secondItem="G2l-pw-uzw" secondAttribute="centerX" id="bG3-1f-mWp"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="M7o-NB-P25"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Hero Library" id="UlI-9B-64j"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ry0-NR-IMb" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1276.8115942028987" y="290.625"/>
         </scene>
     </scenes>
     <resources>
