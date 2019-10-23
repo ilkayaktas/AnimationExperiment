@@ -10,6 +10,7 @@ target 'AnimationExperiment' do
   pod 'SPStorkController' # Modal view controller coming from ground!
   pod 'SPFakeBar' # Used in SPStorkController
   pod 'SPAlert' # Used in SPStorkController
+  pod 'liquid-swipe'
   # pod 'ElasticTransition'
   # pod 'Gemini'
   # pod 'TweenKit'
